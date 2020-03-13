@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <script>
+        function f1(){
+            alert("Form Submitted");
+        }
+    </script>
+    <style>
+        .form1{
+            border-color: black;
+            border-style: dashed;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-width: thin;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Details to be filled</h2>
+    <div class="form1">
+        <form>
+            User Name: <input type="email" name="email" id="email" pattern="[a-zA-Z]+@[a-z]+(.[a-z])*$" /><br /><br />
+            Password : <input type="password" pattern=" (?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/><br /><br />
+            Contact : <input type="tel" id="number" pattern="[2-9]{1}[0-9]{9}"><br /><br />
+            Gender: <select type="text" value="select">
+                <option value="Default">Default</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br /><br />
+            <input type="checkbox" />I agree to the terms and conditions<br /><br />
+            <button type="submit"
+            >submit</button>
+            <button type="finish" onclick="f1()">finish</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
