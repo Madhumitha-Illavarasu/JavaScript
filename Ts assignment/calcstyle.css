@@ -1,0 +1,15 @@
+.Calculator{
+    background-color:white;
+    text-align: center; 
+    width:450px;
+    height:250px;
+}
+body{
+    background-color: grey;    
+    padding-left: 150px;
+    padding-right: 150px;
+}
+div Button{
+    background-color:black;
+    color: blanchedalmond;
+}
