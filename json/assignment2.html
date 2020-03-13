@@ -1,0 +1,48 @@
+<html>
+<head>
+    <script>
+var orders=[{
+    orderNumber:1,
+    orderItem:"laptop",
+    orderDate:"feb 24",
+    deliveryDate:"feb 28",
+    paymentMethod:"Cash on delivery",
+    amount:40000
+},
+{
+    orderNumber:2,
+    orderItem:"Ethnic wear",
+    orderDate:"feb 2",
+    deliveryDate:"feb 8",
+    paymentMethod:"Net banking",
+    amount:2000
+},
+{
+    orderNumber:3,
+    orderItem:"Kitchen decor",
+    orderDate:"feb 25",
+    deliveryDate:"Mar 1",
+    paymentMethod:"Cash on delivery",
+    amount:50000
+}
+];
+
+
+var order=JSON.stringify(orders);
+var order1=JSON.parse(order);
+
+
+
+for(var i=0;i<orders.length;i++){
+document.write(order1[i].orderNumber);
+document.write(order1[i].orderItem);
+document.write(order1[i].orderDate);
+document.write(order1[i].deliveryDate);
+document.write(order1[i].paymentMethod);
+document.write(order1[i].amount);
+document.write("<br/>")
+
+}
+</script>
+</head>
+</html>
